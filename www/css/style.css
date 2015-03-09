@@ -95,7 +95,7 @@ ion-content.has-header.has-tabs{
 }
 
 .has-tabs, .bar-footer.has-tabs{
-	bottom:0;
+	bottom:100px;
 }
 .item.item-icon-left > .badge,
 .item.item-icon-left .item-content > .badge{
