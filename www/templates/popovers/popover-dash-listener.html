@@ -1,0 +1,28 @@
+<ion-popover-view>
+  <ion-header-bar class="bar bar-header bar-{{activeCore.color || 'energized'}}">
+    <h1 class="title">Listeners</h1>
+  </ion-header-bar>
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="listener in activeLsts" class="item-icon-left">
+        <a href="/#main/tab/listeners/{{listener.id}}">
+          <i class="icon {{listener.core.icon || cores[listener.core.id].icon}} {{listener.core.color || cores[listener.core.id].color}}"></i>
+          {{listener.listenerName}}
+          <span class="badge badge-{{listener.enabled ? 'balanced' : 'dark'}}">
+              {{listener.enabled ? "On" : "Off"}}
+            </span>
+          <p>{{listener.core.name}}</p>
+        </a>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+
+  <ion-footer-bar class="block-buttons">
+    <div class="buttons">
+      <button class="button button-block button-assertive" ng-click="deleteData()">Clear Events</button>
+      <button class="button button-block button-energized" ng-click="disableAllEvents()">Disable All</button>
+      <button class="button button-block button-balanced" ng-click="enableAllEvents()">Enable All</button>
+    </div>
+  </ion-footer-bar>
+
+</ion-popover-view>

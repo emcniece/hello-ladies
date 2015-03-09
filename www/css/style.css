@@ -1,0 +1,125 @@
+/* Empty. Add your own CSS if you like */
+ion-nav-view{
+	background-color:#fff;
+}
+
+/* Code print styles */
+pre {outline: 1px solid #ccc; padding: 5px; margin: 5px; }
+.string { color: green; }
+.number { color: darkorange; }
+.boolean { color: blue; }
+.null { color: magenta; }
+.key { color: red; }
+
+.has-tabs, .bar-footer.has-tabs{
+	/*margin-top:47px;*/
+}
+.align-center{ text-align: center; }
+.align-left{ text-align: left; }
+.align-right{ text-align: right; }
+ion-tabs .tabs{
+	padding:0 40px;
+}
+ion-tabs .tabs > .ion-navicon{
+	position: absolute;
+	left:0;
+}
+.icon-huge{
+	font-size:40px;
+}
+a{
+	color:#00adef;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
+	font-family:"Gotham A","Gotham B",proxima-nova,"Helvetica Neue",helvetica,arial,sans-serif;
+	font-weight: 100;
+}
+#home h4, #home h5, #home h6, #home p, #home span, #home a, #home ul, #home li, #home button, #home input{
+	font-family: "Gotham SSm A","Gotham SSm B",proxima-nova,"Helvetica Neue",helvetica,arial,sans-serif;
+	font-weight: 300;
+}
+.list h1, .list h2, .list h3, .list h4, .list h5, .list h6{
+	font-weight: 300;
+}
+.list em{
+	font-style: italic;
+}
+.input-label{
+	font-size:15px;
+}
+.item p .badge,
+.item .badge-inline{
+	position: relative;
+	display: inline-block;
+	top:auto;
+	right:auto;
+}
+.modal .item{
+	margin:-1px 0;
+}
+#home .item-checkbox p{
+	margin:0;
+}
+#home .item-checkbox.item-icon-right .button.icon{
+	max-height:none;
+}
+[name="tab-dash"] ion-content > .scroll{
+	height:100%;
+}
+.slider {
+  height: 100%;
+}
+.slider-slide {
+  padding-top: 5px;
+  color: #000;
+  background-color: #fff;
+}
+.slider-slide:nth-child(odd){
+	/*background:#eee;*/
+}
+.slider-slide .small-header{
+	background:#eee;
+	padding: 5px 0;
+	color: #888;
+	text-shadow: 1px 1px 1px #fff;
+	text-align: center;
+}
+ion-list.has-scroller .item{
+	padding:0;
+}
+ion-list.has-scroller .item ion-scroll.item{
+	padding:16px;
+}
+ion-content.has-header.has-tabs{
+	top:49px;
+}
+
+.has-tabs, .bar-footer.has-tabs{
+	bottom:0;
+}
+.item.item-icon-left > .badge,
+.item.item-icon-left .item-content > .badge{
+	right:60px;
+}
+.box-content{
+	margin-top:38px;
+}
+.slider-pager{
+	bottom:0;
+	padding:10px 0 30px 0;
+	background:#ececec;
+	border-top:1px solid #acacac;
+}
+#home ion-item > a{
+	text-decoration: none;
+}
+.bar-footer > .button-block{
+	margin:0;
+}
+
+/* Responsive sizes */
+@media (max-width: 767px) {
+
+}
+@media (max-width: 400px) {
+}

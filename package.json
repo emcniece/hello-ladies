@@ -1,0 +1,10 @@
+{
+  "name": "hello-ladies",
+  "description": "How to greet women",
+  "version": "0.0.1",
+  "private": false,
+  "dependencies": {
+    "express": "~4.4.3",
+    "livereload": "^0.3.4"
+  }
+}

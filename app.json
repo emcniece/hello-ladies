@@ -1,0 +1,7 @@
+{
+  "name": "Hello Ladies",
+  "description": "Instructions for greeting women in varying circumstances",
+  "repository": "https://github.com/emcniece/hello-ladies",
+  "logo": "http://ionicframework.com/img/ionic-logo-blog.png",
+  "keywords": ["ionic", "static", "hello", "ladies"]
+}
