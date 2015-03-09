@@ -8,7 +8,7 @@
 angular.module('ionic.utils', []);
 angular.module('ionicHelloWomen', ['ionic', 'hw.controllers', 'hw.services'])
 
-.run(function($ionicPlatform, $localStorage) {
+.run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
     // for form inputs)

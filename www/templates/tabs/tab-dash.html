@@ -1,12 +1,58 @@
-<ion-view title="Hello Women" hide-nav-bar="true">
+<ion-view title="Hello Ladies!" hide-nav-bar="true">
 
   <ion-header-bar class="bar-calm">
-    <h1 class="title">Hello Women</h1>
+    <h1 class="title">Hello Ladies!</h1>
   </ion-header-bar>
 
-  <ion-content>
+  <ion-content class="padding">
+    <h1>How To Say Hello To Women</h1>
 
-  
+    <form>
+      <ion-list>
+
+        <label class="item item-input item-select">
+          <div class="input-label">
+            Location
+          </div>
+          <select
+            ng-change="updateAction()"
+            ng-model="location.data"
+            ng-options="location.label for location in locations track by location.id"
+          >
+          </select>
+        </label>
+
+        <label class="item item-input item-select">
+          <div class="input-label">
+            Length of Relationship
+          </div>
+          <select
+            ng-change="updateAction()"
+            ng-model="length.data"
+            ng-options="length.label for length in lengths track by length.id"
+          >
+          </select>
+
+        </label>
+
+        <label class="item item-input item-select">
+          <div class="input-label">
+            Type of Relationship
+          </div>
+          <select
+            ng-change="updateAction()"
+            ng-model="type.data"
+            ng-options="type.label for type in types track by type.id"
+          >
+          </select>
+        </label>
+
+      </ion-list>
+    </form>
+
+    <h3>You should...</h3>
+
+    <button class="button button-block button-{{button.color}} button-{{button.clear}}">{{action}}</button>
 
   </ion-content>
 </ion-view>
