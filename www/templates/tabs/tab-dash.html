@@ -17,6 +17,7 @@
           <select
             ng-change="updateAction()"
             ng-model="location.data"
+            ng-init="location.data = locations[0]"
             ng-options="location.label for location in locations track by location.id"
           >
           </select>
@@ -29,6 +30,7 @@
           <select
             ng-change="updateAction()"
             ng-model="length.data"
+            ng-init="length.data = lengths[0]"
             ng-options="length.label for length in lengths track by length.id"
           >
           </select>
@@ -42,6 +44,7 @@
           <select
             ng-change="updateAction()"
             ng-model="type.data"
+            ng-init="type.data = types[0]"
             ng-options="type.label for type in types track by type.id"
           >
           </select>

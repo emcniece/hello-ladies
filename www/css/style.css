@@ -122,7 +122,22 @@ ion-content.has-header.has-tabs{
 
 }
 @media (max-width: 430px) {
+	.item-select{
+		display: block;
+	}
+	.item-select .input-label{
+		display: block;
+		max-width:100%;
+		width:auto;
+	}
 	.item-select select{
 		position: relative;
+		display: block;
+		width: auto;
+		max-width: 100%;
+	}
+	.item-select:after{
+		
+		top:68%;
 	}
 }
