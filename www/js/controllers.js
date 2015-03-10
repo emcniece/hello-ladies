@@ -45,17 +45,16 @@ angular.module('hw.controllers', [])
 
   $scope.updateAction = function(){
 
-    //console.log( $scope.location.data.id, $scope.length.data.id, $scope.type.data.id, logicTable);
-    if( (typeof($scope.location.data.id) === 'undefined') ||
-        (typeof($scope.length.data.id) === 'undefined') ||
-        (typeof($scope.type.data.id) === 'undefined')
+    if( (typeof($scope.location.data) === 'undefined') ||
+        (typeof($scope.length.data) === 'undefined') ||
+        (typeof($scope.type.data) === 'undefined')
     ){
       $scope.action = "Select options above...";
       $scope.button = {color: 'calm',clear: 'clear'};
 
     } else{
       $scope.action = logicTable[$scope.location.data.id][$scope.length.data.id][$scope.type.data.id];
-      
+
       switch($scope.action){
         case 'None/Verbal':
           $scope.button = {color: 'dark', clear: ''};

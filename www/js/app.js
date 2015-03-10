@@ -33,25 +33,14 @@ angular.module('ionicHelloLadies', ['ionic', 'hw.controllers', 'hw.services'])
   $stateProvider
 
     // setup an abstract state for the tabs directive
-    .state('main', {
-      url: "/main",
+
+    .state('tab', {
+      url: "/tab",
       abstract: true,
-      templateUrl: "templates/menu.html"
+      templateUrl: "templates/tabs.html"
     })
 
-    .state('main.tabs', {
-      url: '/tab',
-      abstract: true,
-      views: {
-        'menu-content': {
-          templateUrl: "templates/tabs.html"
-        }
-      }
-    })
-
-    // Each tab has its own nav history stack:
-
-    .state('main.tabs.dash', {
+    .state('tab.dash', {
       url: '/dash',
       views: {
         'tab-dash': {
@@ -61,10 +50,10 @@ angular.module('ionicHelloLadies', ['ionic', 'hw.controllers', 'hw.services'])
       }
     })
 
-    .state('main.tabs.about', {
+    .state('tab.about', {
       url: '/about',
       views: {
-        'tab-dash': {
+        'tab-about': {
           templateUrl: 'templates/tabs/tab-about.html',
           controller: 'AboutCtrl'
         }
@@ -74,7 +63,7 @@ angular.module('ionicHelloLadies', ['ionic', 'hw.controllers', 'hw.services'])
     ; // $stateProvider
 
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/main/tab/dash');
+  $urlRouterProvider.otherwise('/tab/dash');
 
 });
 
